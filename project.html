@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | DevShirah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fffde7, #f9f9f9, #d1d1d1);
+      color: #000;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #000;
+      font-family: 'Pacifico', cursive;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #000;
+      font-style: italic;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    .projects-section {
+      padding: 140px 20px 80px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: #4a90e2;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #4a90e2;
+      color: #fff;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    .project-card a:hover {
+      background: #2d9cdb;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    footer {
+      background-color: #000;
+      padding: 30px 20px;
+      text-align: center;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    .footer-heading {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      font-size: 1.8em;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.3);
+    }
+
+    .icon.whatsapp:hover { color: #25D366; }
+    .icon.instagram:hover { color: #E1306C; }
+    .icon.linkedin:hover { color: #0077b5; }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .projects-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DevShirah</div>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="https://img.freepik.com/premium-vector/quiz-blue-logo-isolate-white-questionnaire-icon-poll-sign-flat-bubble-speech-symbols_189959-1105.jpg" alt="QuizVerse Project">
+        <h3>QuizVerse</h3>
+        <p>A dynamic quiz web app with 6 categories, review system, result page, and interactive feedback.</p>
+        <a href="https://quiz.com/" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141350.jpg" alt="Homemade Food Website">
+        <h3>Homemade Food Site</h3>
+        <p>A stylish food website featuring categories like breakfast, lunch, snacks, desserts, and drinks.</p>
+        <a href="https://mid-term-bice.vercel.app/index.html" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-heading">Connect with me</p>
+    <div class="social-icons">
+      <a href="https://wa.me/923153649987" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/inshirahfatima" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/inshirah-fatima" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 DevShirah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | DevShirah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fffde7, #f9f9f9, #d1d1d1);
+      color: #000;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .logo:hover {
+      color: #ffd700;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #000;
+      font-style: italic;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 140px 40px 60px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-image img {
+      width: 320px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #4a90e2;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .cv-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cv-button:hover {
+      background-color: #ffd700;
+      color: #000;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 30px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .footer-heading {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      font-size: 1.8em;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.3);
+    }
+
+    .icon.whatsapp:hover { color: #25D366; }
+    .icon.instagram:hover { color: #E1306C; }
+    .icon.linkedin:hover { color: #0077b5; }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .about-section {
+        flex-direction: column;
+        padding: 120px 20px 40px;
+      }
+
+      .about-text h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <div class="logo">DevShirah</div>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+</header>
+
+  <section class="about-section">
+    <div class="about-image">
+      <img src="data:image/jpeg;base64,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" alt="Inshirah Fatima">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I’m Inshirah Fatima, a creative and detail-oriented web developer passionate about building responsive and interactive websites.<br><br>
+        I enjoy using modern technologies like HTML, CSS, and JavaScript to bring ideas to life.<br><br>
+        <strong>Skills:</strong> HTML, CSS, JavaScript, Problem Solving, Teamwork.
+      </p>
+      <button class="cv-button">Download CV</button>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-heading">Connect with me</p>
+    <div class="social-icons">
+      <a href="https://wa.me/923153649987" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/inshirahfatima" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/inshirah-fatima" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 DevShirah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
